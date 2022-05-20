@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.RecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.pojo.Record">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="money" column="money" jdbcType="BIGINT"/>
+            <result property="categoryId" column="category_id" jdbcType="BIGINT"/>
+            <result property="dataTime" column="data_time" jdbcType="VARCHAR"/>
+            <result property="commet" column="commet" jdbcType="VARCHAR"/>
+            <result property="uId" column="u_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,money,category_id,
+        data_time,commet,u_id
+    </sql>
+</mapper>
